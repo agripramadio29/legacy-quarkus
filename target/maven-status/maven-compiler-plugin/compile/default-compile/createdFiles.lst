@@ -1,0 +1,6 @@
+org/ehprods/endpoints/MariaDB.class
+org/ehprods/endpoints/HTTPD.class
+org/ehprods/endpoints/Containerd.class
+org/ehprods/endpoints/Grafana.class
+org/ehprods/endpoints/RabbitMQ.class
+org/ehprods/endpoints/Vsftpd.class
