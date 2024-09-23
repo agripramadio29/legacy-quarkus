@@ -2,6 +2,7 @@ package org.ehprods.utils;
 
 public class AppData {
     public static final String APACHE_TOMCAT_LOC = "/usr/local/tomcat2/bin/";
+    public static final String APACHE_TOMCAT_LOC_IBRANCH = "/usr/local/tomcat1/bin";
     public static final String APACHE_TOMCAT_START = "startup.sh";
     public static final String APACHE_TOMCAT_STOP = "shutdown.sh";
 

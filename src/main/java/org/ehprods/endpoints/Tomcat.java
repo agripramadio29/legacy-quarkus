@@ -32,4 +32,25 @@ public class Tomcat {
         return BashEngine.switcherBashEngine(commands);
     }
 
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/start-ibranch")
+    public int startTomcat1() {
+        return BashEngine.switcherBashEngine(AppData.APACHE_TOMCAT_LOC_IBRANCH + AppData.APACHE_TOMCAT_START);
+    }
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/stop-ibranch")
+    public int stopTomcat1() {
+        return BashEngine.switcherBashEngine(AppData.APACHE_TOMCAT_LOC_IBRANCH + AppData.APACHE_TOMCAT_STOP);
+    }
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/restart-ibranch")
+    public int restartTomcat1() {
+        String[] commands = new String[]{AppData.APACHE_TOMCAT_LOC_IBRANCH, AppData.APACHE_TOMCAT_STOP, AppData.APACHE_TOMCAT_START};
+        return BashEngine.switcherBashEngine(commands);
+    }
 }
